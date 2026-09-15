@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "positive_integer_exponent",
+      "input": {"a": {"type": "int", "value": "2"}, "b": {"type": "int", "value": "3"}},
+      "outcome": {"kind": "return", "result": {"type": "int", "value": "8"}}
+    },
+    {
+      "id": "negative_base_odd_exponent",
+      "input": {"a": {"type": "int", "value": "-2"}, "b": {"type": "int", "value": "3"}},
+      "outcome": {"kind": "return", "result": {"type": "int", "value": "-8"}}
+    },
+    {
+      "id": "negative_base_even_exponent",
+      "input": {"a": {"type": "int", "value": "-2"}, "b": {"type": "int", "value": "4"}},
+      "outcome": {"kind": "return", "result": {"type": "int", "value": "16"}}
+    },
+    {
+      "id": "fractional_exponent",
+      "input": {"a": {"type": "int", "value": "9"}, "b": {"type": "float", "value": "0x1.0000000000000p-1"}},
+      "outcome": {"kind": "return", "result": {"type": "float", "value": "0x1.8000000000000p+1"}}
+    },
+    {
+      "id": "negative_exponent",
+      "input": {"a": {"type": "int", "value": "2"}, "b": {"type": "int", "value": "-3"}},
+      "outcome": {"kind": "return", "result": {"type": "float", "value": "0x1.0000000000000p-3"}}
+    },
+    {
+      "id": "negative_even_exponent",
+      "input": {"a": {"type": "int", "value": "-2"}, "b": {"type": "int", "value": "-2"}},
+      "outcome": {"kind": "return", "result": {"type": "float", "value": "0x1.0000000000000p-2"}}
+    },
+    {
+      "id": "fractional_base",
+      "input": {"a": {"type": "float", "value": "0x1.8000000000000p+0"}, "b": {"type": "int", "value": "2"}},
+      "outcome": {"kind": "return", "result": {"type": "float", "value": "0x1.2000000000000p+1"}}
+    },
+    {
+      "id": "zero_exponent",
+      "input": {"a": {"type": "int", "value": "7"}, "b": {"type": "int", "value": "0"}},
+      "outcome": {"kind": "return", "result": {"type": "int", "value": "1"}}
+    },
+    {
+      "id": "zero_to_zero",
+      "input": {"a": {"type": "int", "value": "0"}, "b": {"type": "int", "value": "0"}},
+      "outcome": {"kind": "return", "result": {"type": "int", "value": "1"}}
+    },
+    {
+      "id": "zero_base_positive_exponent",
+      "input": {"a": {"type": "int", "value": "0"}, "b": {"type": "int", "value": "5"}},
+      "outcome": {"kind": "return", "result": {"type": "int", "value": "0"}}
+    },
+    {
+      "id": "large_integer_result",
+      "input": {"a": {"type": "int", "value": "2"}, "b": {"type": "int", "value": "100"}},
+      "outcome": {"kind": "return", "result": {"type": "int", "value": "1267650600228229401496703205376"}}
+    },
+    {
+      "id": "zero_base_negative_exponent",
+      "input": {"a": {"type": "int", "value": "0"}, "b": {"type": "int", "value": "-1"}},
+      "outcome": {"kind": "exception", "type": "ZeroDivisionError"}
+    },
+    {
+      "id": "negative_base_fractional_exponent",
+      "input": {"a": {"type": "int", "value": "-4"}, "b": {"type": "float", "value": "0x1.0000000000000p-1"}},
+      "outcome": {"kind": "exception", "type": "ValueError"}
+    },
+    {
+      "id": "non_finite_base",
+      "input": {"a": {"type": "float", "value": "inf"}, "b": {"type": "int", "value": "2"}},
+      "outcome": {"kind": "exception", "type": "ValueError"}
+    },
+    {
+      "id": "boolean_base",
+      "input": {"a": {"type": "bool", "value": "true"}, "b": {"type": "int", "value": "2"}},
+      "outcome": {"kind": "exception", "type": "TypeError"}
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "contextFileName": ["GEMINI.md", "AGENTS.md"],
+  "autoAccept": false,          // 안전한 도구도 매번 확인 (실습 권장)
+  "sandbox": false,             // 실습은 false, 통제 환경에서만 true
+  "coreTools": [
+    "ReadFileTool", "WriteFileTool", "EditTool", "GlobTool", "GrepTool",
+    "ShellTool(pytest)", "ShellTool(python)", "ShellTool(git)", "ShellTool(flask)"
+  ],
+  "fileFiltering": { "respectGitIgnore": true }
+}
