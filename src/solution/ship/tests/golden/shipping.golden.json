@@ -1,0 +1,62 @@
+{
+  "GOLD/-1": {
+    "error": "ValueError"
+  },
+  "GOLD/0": {
+    "error": "ValueError"
+  },
+  "GOLD/1": {
+    "fee": 3000
+  },
+  "GOLD/10000": {
+    "fee": 3000
+  },
+  "GOLD/100000": {
+    "fee": 0
+  },
+  "GOLD/19999": {
+    "fee": 3000
+  },
+  "GOLD/20000": {
+    "fee": 0
+  },
+  "GOLD/29999": {
+    "fee": 0
+  },
+  "GOLD/30000": {
+    "fee": 0
+  },
+  "GOLD/30001": {
+    "fee": 0
+  },
+  "NORMAL/-1": {
+    "error": "ValueError"
+  },
+  "NORMAL/0": {
+    "error": "ValueError"
+  },
+  "NORMAL/1": {
+    "fee": 3000
+  },
+  "NORMAL/10000": {
+    "fee": 3000
+  },
+  "NORMAL/100000": {
+    "fee": 0
+  },
+  "NORMAL/19999": {
+    "fee": 3000
+  },
+  "NORMAL/20000": {
+    "fee": 3000
+  },
+  "NORMAL/29999": {
+    "fee": 3000
+  },
+  "NORMAL/30000": {
+    "fee": 0
+  },
+  "NORMAL/30001": {
+    "fee": 0
+  }
+}
